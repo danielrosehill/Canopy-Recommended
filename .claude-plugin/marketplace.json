@@ -1,0 +1,186 @@
+{
+  "name": "canopy-recommended",
+  "owner": {
+    "name": "Daniel Rosehill"
+  },
+  "metadata": {
+    "description": "Plugins that help an agent work on your local network, for Canopy users. Pinned to reviewed commits."
+  },
+  "plugins": [
+    {
+      "name": "network-playbook",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Network-Playbook",
+        "sha": "e9da40a471eaf493e6a84a0d42c68780676ce0b8"
+      },
+      "description": "Document a home network so it can be rebuilt after a move: scan and probe it, then keep a printable PDF playbook and an agent-readable JSON definition.",
+      "category": "network"
+    },
+    {
+      "name": "network-forensics",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Network-Forensics-Plugin",
+        "sha": "7288415116adde0e0a24fbc1bdca4a8d255929b4"
+      },
+      "description": "Network forensics for home and small networks: trace a device's egress at the firewall, document it, lock it down, verify.",
+      "category": "network"
+    },
+    {
+      "name": "opnsense-mgmt",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Opnsense-Mgmt-Plugin",
+        "sha": "1fe8eeeed303d5890808b4953807dc2ceb69bde4"
+      },
+      "description": "Manage an OPNsense router/firewall via SSH and the OPNsense API — guided first-run onboarding, firewall rule inspection, network debugging, and host/log diagnostics. Per-host config is stored outside the plugin so the same install works across multiple environments.",
+      "category": "network"
+    },
+    {
+      "name": "linux-bt",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Claude-Linux-BT-Plugin",
+        "sha": "8ac36d4960d92eade500bbac75ea6f2e4f62cb8a"
+      },
+      "description": "Bluetooth on Linux from the command line, because the desktop pairing dialogs are unreliable. Diagnose the adapter, scan, pair + trust + connect in one non-interactive bluetoothctl session, manage known devices (connect, disconnect, forget, battery) and reset the stack. BlueZ 5.x; works the same under KDE, GNOME or no desktop.",
+      "category": "network"
+    },
+    {
+      "name": "cloudflare",
+      "source": {
+        "source": "github",
+        "repo": "cloudflare/skills",
+        "sha": "6eb6c781aa9b6438e0c7307bd102788a75fe1a6d"
+      },
+      "description": "Build, test, and deploy applications on Cloudflare with platform guidance Skills and the Cloudflare MCP server.",
+      "category": "remote-access",
+      "tags": [
+        "third-party",
+        "connects-mcp"
+      ]
+    },
+    {
+      "name": "tailscale",
+      "source": {
+        "source": "github",
+        "repo": "0oAstro/tailscale-skill",
+        "sha": "e38f2a290c7320c7025d853625d69adf47161ffa"
+      },
+      "description": "Manage Tailscale tailnet resources via curl+jq scripts with operationId-based invocation, dry-run previews, and explicit write confirmation.",
+      "category": "remote-access",
+      "tags": [
+        "third-party"
+      ]
+    },
+    {
+      "name": "docker-manager",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/docker-manager-plugin",
+        "sha": "8f89855bffbe4a348a998afa0f538958c30e3d37"
+      },
+      "description": "Slash commands and subagents for managing Docker containers, Compose stacks, volumes, networks, and multi-environment deployments.",
+      "category": "servers"
+    },
+    {
+      "name": "ubuntu-admin",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Ubuntu-Admin",
+        "sha": "316969eddc6199c81385638907b9d39c63950da5"
+      },
+      "description": "Agent skills for administering Ubuntu machines, desktop or server, locally or over SSH: health and diagnosis, apt/snap/flatpak packages and updates, systemd services and logs, Docker, storage and backups, networking (netplan/NetworkManager), hardware, desktop odds and ends, and shell config. Consolidates linux-desktop-mgmt, linux-server-mgmt and sysadmin-homelab.",
+      "category": "servers"
+    },
+    {
+      "name": "ubuntu-security",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Ubuntu-Security",
+        "sha": "b277bf22b381afa97c14a08232b69254d2c5fd8f"
+      },
+      "description": "Agent skills for host security on Ubuntu desktops and servers: ufw firewall setup, status, scoped allows, rule removal and block diagnosis; ClamAV / rkhunter / chkrootkit / Lynis / AIDE install, definition updates, scans and scheduling; read-only security audits, security-update and spyware/telemetry checks; SSH keys, SSH server config and fail2ban; YubiKey/FIDO2 and fingerprint authentication; TLS certificate checks.",
+      "category": "servers"
+    },
+    {
+      "name": "proxmox-mgmt",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Proxmox-Mgmt-Plugin",
+        "sha": "b4c23ab9d52a9a856c37ad0913b153ce054e153d"
+      },
+      "description": "Manage a Proxmox VE host via SSH and the Proxmox API — guided first-run onboarding, VM/CT lifecycle, storage and ZFS inspection, log review, and update workflows. Per-host config is stored outside the plugin so the same install works across multiple Proxmox environments.",
+      "category": "servers"
+    },
+    {
+      "name": "synology-mgmt",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Synology-Mgmt-Plugin",
+        "sha": "4144ebb9126b11bacf9eb20f302dc6e5a858429d"
+      },
+      "description": "Manage a Synology NAS via SSH — guided first-run onboarding, share/volume inspection, storage health, and file operations. Per-host config is stored outside the plugin so the same install works across multiple NAS environments.",
+      "category": "servers"
+    },
+    {
+      "name": "home-assistant-skills",
+      "source": {
+        "source": "github",
+        "repo": "homeassistant-ai/skills",
+        "sha": "166defa51c606b3c77d45a9b29a459d1f993f357"
+      },
+      "description": "Agent skills for Home Assistant: best practices for automations, helpers, templates, scenes, blueprints, device control, dashboards, AppDaemon, and backups.",
+      "category": "smart-home",
+      "tags": [
+        "third-party"
+      ]
+    },
+    {
+      "name": "homeassistant-config",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ESJavadex/claude-homeassistant-plugins.git",
+        "path": "homeassistant-config",
+        "sha": "93989b9eafd803798dbc0499fcedf366b02102f8"
+      },
+      "description": "Write, check and modernise Home Assistant YAML (automations, scripts, templates, blueprints, dashboards) with the syntax of Home Assistant 2026",
+      "category": "smart-home",
+      "tags": [
+        "third-party",
+        "runs-hooks"
+      ]
+    },
+    {
+      "name": "home-assistant-mgmt",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Home-Assistant-Mgmt-Plugin",
+        "sha": "a24361323d948cfd879373157bf36844e8c0b7f6"
+      },
+      "description": "Manage a Home Assistant instance via SSH and the HA REST API — guided first-run onboarding, automation/entity authoring, service calls, TTS testing, and log review. Per-host config is stored outside the plugin so the same install works across multiple Home Assistant environments.",
+      "category": "smart-home"
+    },
+    {
+      "name": "mqtt-observability",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/mqtt-observability-plugin",
+        "sha": "eecab762c553ac4c38a041cc7283e2af6f46ffda"
+      },
+      "description": "Observe and interact with an MQTT broker — monitor all payloads, watch a specific topic, and publish messages. Stores broker credentials once and reuses them.",
+      "category": "smart-home"
+    },
+    {
+      "name": "zigbee-home-maintenance",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Claude-Zigbee-Home-Maintenance-Plugin",
+        "sha": "ccae4d0fa9065daed10c1548bd424256717f3e02"
+      },
+      "description": "Maintain a home Zigbee network — onboard MQTT broker, coordinator (SMLight / Sonoff / ConBee / etc.), and Home Assistant; manage credentials, network exports, and routine maintenance.",
+      "category": "smart-home"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "plugins": [
+    {
+      "name": "network-playbook",
+      "repo": "danielrosehill/Network-Playbook",
+      "category": "network"
+    },
+    {
+      "name": "network-forensics",
+      "repo": "danielrosehill/Network-Forensics-Plugin",
+      "category": "network"
+    },
+    {
+      "name": "opnsense-mgmt",
+      "repo": "danielrosehill/Opnsense-Mgmt-Plugin",
+      "category": "network"
+    },
+    {
+      "name": "linux-bt",
+      "repo": "danielrosehill/Claude-Linux-BT-Plugin",
+      "category": "network"
+    },
+    {
+      "name": "cloudflare",
+      "repo": "cloudflare/skills",
+      "category": "remote-access"
+    },
+    {
+      "name": "tailscale",
+      "repo": "0oAstro/tailscale-skill",
+      "category": "remote-access"
+    },
+    {
+      "name": "docker-manager",
+      "repo": "danielrosehill/docker-manager-plugin",
+      "category": "servers"
+    },
+    {
+      "name": "ubuntu-admin",
+      "repo": "danielrosehill/Ubuntu-Admin",
+      "category": "servers"
+    },
+    {
+      "name": "ubuntu-security",
+      "repo": "danielrosehill/Ubuntu-Security",
+      "category": "servers"
+    },
+    {
+      "name": "proxmox-mgmt",
+      "repo": "danielrosehill/Proxmox-Mgmt-Plugin",
+      "category": "servers"
+    },
+    {
+      "name": "synology-mgmt",
+      "repo": "danielrosehill/Synology-Mgmt-Plugin",
+      "category": "servers"
+    },
+    {
+      "name": "home-assistant-skills",
+      "repo": "homeassistant-ai/skills",
+      "category": "smart-home"
+    },
+    {
+      "name": "homeassistant-config",
+      "repo": "ESJavadex/claude-homeassistant-plugins",
+      "category": "smart-home",
+      "path": "homeassistant-config"
+    },
+    {
+      "name": "home-assistant-mgmt",
+      "repo": "danielrosehill/Home-Assistant-Mgmt-Plugin",
+      "category": "smart-home"
+    },
+    {
+      "name": "mqtt-observability",
+      "repo": "danielrosehill/mqtt-observability-plugin",
+      "category": "smart-home"
+    },
+    {
+      "name": "zigbee-home-maintenance",
+      "repo": "danielrosehill/Claude-Zigbee-Home-Maintenance-Plugin",
+      "category": "smart-home"
+    }
+  ]
+}
